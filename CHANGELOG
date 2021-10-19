@@ -1,4 +1,21 @@
 
+# 1.0.1 (2021-11-19)
+This is an excellent plugin I added support for a debug render layer.
+on its way to becoming a slick ui There is also the failings of a parallel
+network stream, but I think it's broken :(
+anyhow there is now a
+testSeed Function
+ changelog:
+ - added compatibility with Leaflet.ContinuousZoom.js
+ - added errorTileUrl eviction so that previously failed tiles which had their error tile cached will be evicted when online
+ - added error seed status and tests seed debugging layer.
+ - improved seed event data (so you can hook into the seed drawing data and do it yourself if you wanted)
+ - added useful tileToFeature()
+ - added getStoredTilesAsGeojson() function
+ - added showStoredTiles() function
+ - some jank seedWorker code not working
+
+
 # 1.0.0 (2019-02-06)
 
 * Switched from base64-encoded images to PouchDB attachments (should perform

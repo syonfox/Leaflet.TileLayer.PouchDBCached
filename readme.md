@@ -1,21 +1,7 @@
 
 #Fork Notes:
-This is an excellent plugin I added support for a debug render layer. 
-on its way to becoming a slick ui There is also the failings of a parallel
-network stream, but I think it's broken :( 
-anyhow there is now a 
-testSeed Function
-
- changelog:
- - added compatibility with Leaflet.ContinuousZoom.js
- - added errorTileUrl eviction so that previously failed tiles which had their error tile cached will be evicted when online
- - added error seed status and tests seed debugging layer.
- - improved seed event data (so you can hook into the seed drawing data and do it yourself if you wanted)
- - added useful tileToFeature()
- - added getStoredTilesAsGeojson() function
- - added showStoredTiles() function
- - some jank seedWorker code not working
-
+see CHANGELOG and demo
+this is a great plugging for caching tiles and taking control
 
 #Original
 Allows all Leaflet TileLayers to cache into PouchDB for offline use, in a transparent fashion.
